@@ -2,7 +2,7 @@ jar:compile
 	jar cvfm catalogo.jar Manifest.txt -C bin .
 
 compile:clean
-	find src -name "*.java" | xargs javac -cp bin -d bin
+	find src -name *.java | xargs javac -cp bin -d bin
 
 javadoc:
 	rm -rf html

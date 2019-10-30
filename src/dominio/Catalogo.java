@@ -6,21 +6,21 @@ import java.io.File;
 import java.util.Scanner;
 import java.io.FileWriter;
 
+
 public class Catalogo{
-	private ArrayList<Ropa> listaRopa = new ArrayList<>();
-	private static String nombreFichero = "ropa.txt";
+	private ArrayList<Ropa> listaRopas = new ArrayList<>();
+	private static String nombreFichero = "ropas.txt";
 	public Catalogo(){
 		cargarDesdeFichero();
 	}
-
 	public void annadirRopa(Ropa ropa){
-		listaRopa.add(ropa);
+		listaRopas.add(ropa);
 		volcarAFichero();
 	}
 
-	public void mostrarRopa()
+	public void mostrarRopas()
 	{
-	   for(Ropa ropa : listaRopa) System.out.println(ropa);
+	   for(Ropa ropa : listaRopas) System.out.println(ropa);
 	}
 
 	private void volcarAFichero(){
@@ -41,7 +41,7 @@ public class Catalogo{
 	       } else {
 		   Scanner sc = new Scanner(fichero);
 		   while(sc.hasNext()){
-		       listaRopa.add(new Ropa(sc.next(), sc.next()));
+		       listaRopas.add(new Ropa(sc.next(), sc.next()));
 		   }
 	       }
 	   }catch(IOException ex){
@@ -51,10 +51,11 @@ public class Catalogo{
 	@Override
 	public String toString(){
 	    StringBuilder sb = new StringBuilder();
-	    for(Ropa ropa : listaRopa) sb.append(ropa + "\n");
+	    for(Ropa ropa : listaRopas) sb.append(ropa + "\n");
 	    return sb.toString();
 	}
 }
+
 
 
 
