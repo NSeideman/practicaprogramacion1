@@ -9,10 +9,10 @@ public class Interfaz{
 
 	private static void mostrarAyuda(){
             System.out.println("Las instrucciones posibles son las siguientes:");
-            System.out.println("   1. Mostrar Ropa: java -jar Catalogo.jar show");
-	    System.out.println("   2. Mostrar esta ayuda: java -jar Catalogo.jar help");
-	    System.out.println("   3. Añadir ropa: java -jar Catalogo.jar add <tipo> <marca>, por ejemplo, ");
-	    System.out.println("                   java -jar Catalogo.jar add Camiseta Decathlon");
+            System.out.println("   1. Mostrar Ropa: java -jar catalogo.jar show");
+	    System.out.println("   2. Mostrar esta ayuda: java -jar catalogo.jar help");
+	    System.out.println("   3. Añadir ropa: java -jar catalogo.jar add <tipo> <marca>, por ejemplo, ");
+	    System.out.println("                   java -jar catalogo.jar add Camiseta Decathlon");
 	}
 
 
